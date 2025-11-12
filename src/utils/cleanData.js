@@ -18,7 +18,7 @@ const cleanWordSearching = ({ text }) => {
 
 	const prefixWord = words[words.length - 1] + "*";
 
-	const queryString = [...fuzzyWords, prefixWord].join(" ");
+	const queryString = [...fuzzyWords, prefixWord].join(" | ");
 
 	return queryString;
 };
